@@ -12,7 +12,7 @@ USER root
 #=====
 RUN apt-get update -qqy \
   && apt-get -qqy install \
-  x11vnc \
+  x11vnc python python-pip \
   && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
 
 #=========
