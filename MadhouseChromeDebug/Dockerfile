@@ -24,6 +24,12 @@ RUN apt-get update -qqy \
     fluxbox \
   && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
 
+#==============
+#python package
+#==============
+RUN pip install --upgrade pip && pip install -U selenium configparser pyquery redis
+
+
 USER seluser
 
 #==============================
