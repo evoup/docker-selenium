@@ -27,7 +27,7 @@ RUN apt-get update -qqy \
 #==============
 #python package
 #==============
-RUN pip install --upgrade && pip install -U selenium configparser pyquery redis
+RUN pip install --upgrade && pip install -U selenium configparser pyquery redis requests
 
 
 USER seluser
